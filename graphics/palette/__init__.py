@@ -1,0 +1,1 @@
+from .generator_palette import extended_palette
