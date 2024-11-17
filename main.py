@@ -1,5 +1,5 @@
 import pandas as pd
-from graphics import trends_from_destination_cities, airline_popularity, avg_price_airline
+from scripts import trends_from_destination_cities, airline_popularity, avg_price_airline
 data = pd.read_csv('./Clean_Dataset.csv')
 
 palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e59', '#63529b', '#352c53']
