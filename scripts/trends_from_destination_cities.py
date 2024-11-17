@@ -1,32 +1,35 @@
 import matplotlib.pyplot as plt
-from palette.generator_palette import extended_palette as palette
-import pandas as pd
+import seaborn as sns
 
-data = pd.read_csv('./Clean_Dataset.csv')
-
-import matplotlib.pyplot as plt
-import pandas as pd
-
-avg_prices_by_destination = data.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
-
-plt.figure(figsize=(10, 10))
-
-# Obtener las ciudades de destino únicas
-destination_cities = avg_prices_by_destination['destination_city'].unique()
-
-# Crear las barras para cada source_city
-for i, source_city in enumerate(avg_prices_by_destination['source_city'].unique()):
-    # Filtrar por source_city específico
-    subset = avg_prices_by_destination[avg_prices_by_destination['source_city'] == source_city]
+def graph_gen(data, colors, size=(), img=False):
+    #Tendencias de precios en ciudades de origen y destino
     
-    # Crear las barras para source_city, desplazándolas para que no se sobrepongan
-    plt.bar(subset['destination_city'], subset['price'], label=source_city, color=palette[i], width=0.5, align='center')
+    #dataframe precios promedio por destino
+    data_graph = data.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
+    
+    info_graph = {
+                'title': 'Precio medio del billete por ciudad de destino',
+                'x_name': 'Ciudad de Destino',
+                'y_name' : 'Precio Promedio (INR)',
+                'legend': 'Ciudad de origen'
+    }
+    
+    bar_graph_seaborn(data_graph, colors, info_graph, size, img)
 
-
-plt.title('Precio promedio del billete por ciudad de destino')
-plt.xlabel('Ciudad de destino')
-plt.ylabel('Precio promedio (INR)')
-plt.xticks(rotation=45, ha='right')
-plt.legend(title='Ciudad de origen')
-
-plt.show()
+def bar_graph_seaborn(data_graph, colors, info_graph, size, img):
+    if size:
+        plt.figure(figsize=size)
+    
+    sns.barplot(x='destination_city', y='price', hue='source_city', data=data_graph, palette=colors)
+    plt.title(info_graph['title'])
+    plt.xlabel(info_graph['x_name'])
+    plt.ylabel(info_graph['y_name'])
+    plt.xticks(rotation=45)
+    plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
+    plt.legend(title=info_graph['legend'])
+    plt.tight_layout()
+    
+    if img:
+        plt.savefig(f"./graph_img/{info_graph['title']}.png")
+    else:
+        plt.show()

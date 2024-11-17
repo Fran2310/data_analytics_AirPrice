@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
-from palette.generator_palette import extended_palette as palette
-import pandas as pd
+from .bar_graph import gen_bar
 
 data_main = pd.read_csv('./Clean_Dataset.csv')
 
