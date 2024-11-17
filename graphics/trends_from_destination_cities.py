@@ -1,19 +1,35 @@
 import matplotlib.pyplot as plt
-from palette.generator_palette import extended_palette
-import pandas as pd
 import seaborn as sns
 
-data = pd.read_csv('./Clean_Dataset.csv')
+def graph_gen(data, colors, size=(), img=False):
+    #Tendencias de precios en ciudades de origen y destino
+    
+    #dataframe precios promedio por destino
+    data_graph = data.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
+    
+    info_graph = {
+                'title': 'Precio medio del billete por ciudad de destino',
+                'x_name': 'Ciudad de Destino',
+                'y_name' : 'Precio Promedio (INR)',
+                'legend': 'Ciudad de origen'
+    }
+    
+    bar_graph_seaborn(data_graph, colors, info_graph, size, img)
 
-avg_prices_by_destination = data.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
-
-plt.figure(figsize=(14, 8))
-sns.barplot(x='destination_city', y='price', hue='source_city', data=avg_prices_by_destination, palette=extended_palette)
-plt.title('Precio medio del billete por ciudad de destino')
-plt.xlabel('Ciudad de Destino')
-plt.ylabel('Precio Promedio (INR)')
-plt.xticks(rotation=45, ha='right')
-plt.grid(True, color=extended_palette[7], linestyle='--', linewidth=0.5)
-plt.legend(title='Ciudad de origen')
-plt.tight_layout()
-plt.show()
+def bar_graph_seaborn(data_graph, colors, info_graph, size, img):
+    if size:
+        plt.figure(figsize=size)
+    
+    sns.barplot(x='destination_city', y='price', hue='source_city', data=data_graph, palette=colors)
+    plt.title(info_graph['title'])
+    plt.xlabel(info_graph['x_name'])
+    plt.ylabel(info_graph['y_name'])
+    plt.xticks(rotation=45)
+    plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
+    plt.legend(title=info_graph['legend'])
+    plt.tight_layout()
+    
+    if img:
+        plt.savefig(f"./graph_img/{info_graph['title']}.png")
+    else:
+        plt.show()
