@@ -14,4 +14,4 @@ plt.ylabel('N° de reservas')
 plt.grid(True, color=palette[7], linestyle='--', linewidth=0.5)
 plt.xticks(rotation=45)
 
-plt.show()
+plt.show() 
