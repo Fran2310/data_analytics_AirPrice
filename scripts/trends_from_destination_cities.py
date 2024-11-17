@@ -8,7 +8,7 @@ def graph_gen(data, colors, size=(), img=False):
     data_graph = data.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
     
     info_graph = {
-                'title': 'Precio medio del billete por ciudad de destino',
+                'title': 'Precio medio del Boleto por ciudad de destino',
                 'x_name': 'Ciudad de Destino',
                 'y_name' : 'Precio Promedio (INR)',
                 'legend': 'Ciudad de origen'

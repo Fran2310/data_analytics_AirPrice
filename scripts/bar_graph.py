@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 def gen_bar(data_graph, colors, info_graph, size=(), img=False):
     """
     Genera un gráfico de barras para un DataFrame o Serie.
