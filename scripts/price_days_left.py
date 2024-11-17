@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from palette.generator_palette import extended_palette as palette
 import pandas as pd
 
-data = pd.read_csv('./Clean_Dataset.csv')
+data = pd.read_csv('./data/Clean_Dataset.csv')
 
 max_days_left = data['days_left'].max()
 

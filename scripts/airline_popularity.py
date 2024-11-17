@@ -1,7 +1,8 @@
+import pandas as pd
 import matplotlib.pyplot as plt
-from .bar_graph import gen_bar
+from palette.generator_palette import extended_palette as palette
 
-data_main = pd.read_csv('./Clean_Dataset.csv')
+data_main = pd.read_csv('./data/Clean_Dataset.csv')
 
 airline_popularity = data_main['airline'].value_counts()
 plt.figure(figsize=(8, 6))

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from palette.generator_palette import extended_palette as palette
 import pandas as pd
 
-data_main = pd.read_csv('./Clean_Dataset.csv')
+data_main = pd.read_csv('./data/Clean_Dataset.csv')
 
 one_day_before = data_main[data_main['days_left'] == 1]
 two_days_before = data_main[data_main['days_left'] == 2]
