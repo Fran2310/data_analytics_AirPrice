@@ -14,4 +14,4 @@ def airport_map(airports):
         ).add_to(m)
 
     # Mostrar el mapa
-    m.save('./web/mapa_aeropuertos.html')
+    m.save('./web/airports_map.html')
