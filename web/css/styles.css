@@ -10968,7 +10968,6 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
@@ -10984,7 +10983,6 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
@@ -11037,11 +11035,10 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: #0b4b72;
   color: #fff;
 }
 
 .copyright {
   background-color: #1a252f;
 }
-
