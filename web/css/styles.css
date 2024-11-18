@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
+  --bs-link-color: #6ec9ff;
+  --bs-link-hover-color: #359fdf;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -8135,6 +8135,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-proyecto {
+  --bs-bg-opacity: 1;
+  background-color: #f8f9fa;
+}
+
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
@@ -11035,10 +11040,35 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #0b4b72;
+  background-color: #1e5b80;
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: #2d89bf;
 }
+
+.justificado {
+  text-align: justify;
+}
+
+/*
+hex
+#1596e4
+#1283c8
+#1071ab
+#0d5e8e
+#0b4b72
+#083855
+#052539
+#03131c
+rgb
+rgb(21, 150, 228)
+rgb(18, 131, 200)
+rgb(16, 113, 171)
+rgb(13, 94, 142)
+rgb(11, 75, 114)
+rgb(8, 56, 85)
+rgb(5, 37, 57)
+rgb(3, 19, 28)
+*/
