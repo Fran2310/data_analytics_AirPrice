@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 174, 214, 241;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-primary-rgb: 20, 150, 230;
+  --bs-secondary-rgb: 5, 37, 57;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -10979,7 +10979,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 30rem;
 }
 
 @media (min-width: 992px) {
@@ -11044,3 +11044,4 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
