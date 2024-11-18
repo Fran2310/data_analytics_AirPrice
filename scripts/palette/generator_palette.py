@@ -1,3 +1,4 @@
+#modulo deprecado
 import matplotlib.colors as mcolors
 
 palette_base = ['#007f97', '#a4bcbc', '#7c587f', '#4c3f77']

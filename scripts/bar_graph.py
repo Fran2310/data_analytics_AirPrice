@@ -33,8 +33,9 @@ def gen_bar(data_graph, colors, info_graph, size=(), img=False):
     plt.ylabel(info_graph['y_name'])
     plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
     plt.xticks(rotation=45)
-
+    plt.tight_layout()
+    
     if img:
-        plt.savefig(f"./graph_img/{info_graph['title']}.png")
+        plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png")
     else:
         plt.show()

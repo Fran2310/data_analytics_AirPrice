@@ -14,9 +14,9 @@ def graph_gen(data, colors, size=(), img=False):
                 'legend': 'Ciudad de origen'
     }
     
-    bar_graph_seaborn(data_graph, colors, info_graph, size, img)
+    bar_graph_3C(data_graph, colors, info_graph, size, img)
 
-def bar_graph_seaborn(data_graph, colors, info_graph, size, img):
+def bar_graph_3C(data_graph, colors, info_graph, size, img):
     if size:
         plt.figure(figsize=size)
     
@@ -30,6 +30,6 @@ def bar_graph_seaborn(data_graph, colors, info_graph, size, img):
     plt.tight_layout()
     
     if img:
-        plt.savefig(f"./graph_img/{info_graph['title']}.png")
+        plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png")
     else:
         plt.show()

@@ -1,3 +1,5 @@
 from .trends_from_destination_cities import graph_gen
 from .airline_popularity import graph_gen
 from .avg_price_airline import graph_gen
+from .price_1_vs_2_days_depature import graph_gen
+from .price_days_left import graph_gen

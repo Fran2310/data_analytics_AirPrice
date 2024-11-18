@@ -1,19 +1,34 @@
 import matplotlib.pyplot as plt
-from palette.generator_palette import extended_palette as palette
-import pandas as pd
 
-data_main = pd.read_csv('./data/Clean_Dataset.csv')
 
-one_day_before = data_main[data_main['days_left'] == 1]
-two_days_before = data_main[data_main['days_left'] == 2]
+def graph_gen(data, colors, size=(), img=False):
+    data_filtered = data[data['days_left'].isin([1, 2])]
 
-plt.hist(one_day_before['price'], bins=30, alpha=0.5, label='1 Dia Antes', color=palette[0])
+    info_graph = {
+        'title': 'Distribución de precios de billetes de 1 y 2 días antes de la salida',
+        'x_name': 'Precio (INR)',
+        'y_name': 'N° Tickets (frecuencia)'
+    }
+    
+    gen_hist(data_filtered, colors, info_graph, size, img)
 
-plt.hist(two_days_before['price'], bins=30, alpha=0.5, label='2 Dias Antes', color=palette[3])
+def gen_hist(data, colors, info_graph, size, img):
+    if size:
+        plt.figure(figsize=size)
 
-plt.title('Distribución de precios de billetes de 1 y 2 días antes de la salida')
-plt.xlabel('Precio')
-plt.ylabel('N° Tickets (frecuencia)')
-plt.grid(True, color=palette[7], linestyle='--', linewidth=0.5)
-plt.legend()
-plt.show()
+    color_map = {1: colors[0], 2: colors[6]}
+
+    for days, group_data in data.groupby('days_left'):
+        plt.hist(group_data['price'], bins=30, alpha=0.5, label=f'{days} Días Antes', color=color_map[days])
+
+    plt.title(info_graph['title'])
+    plt.xlabel(info_graph['x_name'])
+    plt.ylabel(info_graph['y_name'])
+    plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
+    plt.legend()
+    plt.tight_layout()
+
+    if img:
+        plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png")
+    else:
+        plt.show()
