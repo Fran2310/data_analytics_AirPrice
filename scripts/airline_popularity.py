@@ -5,8 +5,8 @@ def graph_gen(data, colors, size=(), img=False):
     data_graph = data['airline'].value_counts()
 
     info_graph = {
-        'title' : 'Número de reservas por aerolinea',
-        'x_name' : 'Aerolineas',
+        'title' : 'Número de reservas por aerolínea',
+        'x_name' : 'Aerolínea',
         'y_name' : 'N° de reservas'
     }
     

@@ -5,7 +5,7 @@ def graph_gen(data, colors, size=(), img=False):
     data_filtered = data[data['days_left'].isin([1, 2])]
 
     info_graph = {
-        'title': 'Distribución de precios de billetes de 1 y 2 días antes de la salida',
+        'title': 'Distribución de precios de boletos para 1 y 2 días antes de la salida',
         'x_name': 'Precio (INR)',
         'y_name': 'N° Tickets (frecuencia)'
     }
