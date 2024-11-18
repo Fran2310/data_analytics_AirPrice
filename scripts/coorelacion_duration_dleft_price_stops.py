@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-from palette.generator_palette import extended_palette as palette
 import pandas as pd
 
 df =  pd.read_csv('./data/Clean_Dataset.csv')
-
+#mapeado de la columna stops para pasarlo a datos numericos
 stops_mapping = {
     'zero': 0,
     'one': 1,
@@ -41,4 +40,4 @@ plt.ylabel('Precio (en la moneda correspondiente)')
 # Mostrar el gráfico
 plt.show()
 
-#coorelacion entre aerolineas y precio
+
