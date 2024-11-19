@@ -11085,12 +11085,9 @@ html {
   text-align: justify;
 }
 
-
 .grid-container-map {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   justify-items: center;
   align-items: center;
@@ -11105,7 +11102,7 @@ html {
 }
 
 .grid-item-map iframe {
-  width: 200%; /* Ocupa todo el ancho de la celda */
+  width: 125%; /* Ocupa todo el ancho de la celda */
   height: 500px; /* Ajusta la altura según sea necesario */
 }
 
