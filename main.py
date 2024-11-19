@@ -19,9 +19,9 @@ airline_popularity.graph_gen(data, palette_colors, (8,6), True)
 
 #trends_from_destination_cities.graph_gen(data, palette_colors, (11,6), True)
 
-#price_class.graph_gen(data, palette_colors, (8,6), True)
+#price_class.graph_gen(data, palette_colors, (8,6))
 
-dist_price_class.graph_gen(data, palette_colors, (8,6))
+#dist_price_class.graph_gen(data, palette_colors, (8,6))
 
 Crr_re_pr.graph_gen(data,palette_colors, (11,6), True)
 
