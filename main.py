@@ -13,15 +13,15 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #airline_popularity.graph_gen(data, palette_colors, (8,6), True)
 
-price_1_vs_2_days_depature.graph_gen(data, palette_colors, (8,6))
+#price_1_vs_2_days_depature.graph_gen(data, palette_colors, (8,6))
 
 #price_days_left.graph_gen(data, palette_colors, (11,6), True)
 
 #trends_from_destination_cities.graph_gen(data, palette_colors, (11,6), True)
 
-#price_class.graph_gen(data, palette_colors, (8,6), True)
+#price_class.graph_gen(data, palette_colors, (8,6))
 
-dist_price_class.graph_gen(data, palette_colors, (8,6))
+#dist_price_class.graph_gen(data, palette_colors, (8,6))
 
 #airports_map2.airport_map(airp) #map html
 
