@@ -28,11 +28,12 @@ def gen_bar(data_graph, colors, info_graph, size=(), img=False):
 
     plt.bar(x_data, y_data, color=colors)
 
-    plt.title(info_graph['title'])
-    plt.xlabel(info_graph['x_name'])
-    plt.ylabel(info_graph['y_name'])
+    plt.title(info_graph['title'], fontsize=12, fontweight='bold', color='#353535')
+    plt.xlabel(info_graph['x_name'], fontsize=10, fontweight='bold', color='#353535')
+    plt.ylabel(info_graph['y_name'], fontsize=10, fontweight='bold', color='#353535')
     plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=45, fontsize=10, color='#353535')
+    plt.yticks(fontsize=10, color='#353535')
     plt.tight_layout()
     
     if img:
