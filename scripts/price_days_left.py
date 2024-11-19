@@ -1,7 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+"""
+* Distribucion:
+    - La tendencia general es que a mayor antelacion reservan su boleto, pueden encontrar precios mas bajos
+    - Cuando quedan menos de 18 dias para la salida del vuelo se observa el principal aumento de precios
+    - Cuando reservan a 18 dias o mas para la salida del vuelo el precio no parece aumentar significativamente, pero lo mejor es reversar con la mayor antelacion
+    
+"""
 def graph_gen(data, colors, size=(), img=False):
     max_days_left = data['days_left'].max()
     bins = range(0, max_days_left + 3, 3)

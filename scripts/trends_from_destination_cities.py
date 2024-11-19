@@ -1,6 +1,13 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+"""
+*Observacion:
+    - La ruta de Chennai a Bangalore es la más costosa
+    - La ciudad de Delhi ofrece los precios más bajos
+"""
+
 def graph_gen(data, colors, size=(), img=False):
     #Tendencias de precios en ciudades de origen y destino
     
