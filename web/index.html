@@ -31,19 +31,13 @@
                 <!-- Masthead Subheading-->
                 <p></p>
                 <p class="masthead-subheading font-weight-light mb-0">Samsung Innovation Campus</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
             </div>
         </header>
         <!-- About Section-->
-        <section class="page-section bg-proyecto text-secondary mb-0" id="about">
+        <section class="proyecto-section bg-proyecto text-secondary mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary">Proyecto</h2>
+                <h2 class="proyecto-section-heading text-center text-uppercase text-secondary">Proyecto</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -67,46 +61,34 @@
             </div>
         </section>
         <!-- Mapas Section -->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="mapas-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mapas</h2>
+                <h2 class="mapas-section-heading text-center text-uppercase text-secondary mb-0">Mapas</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Maps Grid Items-->
-                <div class="row justify-content-center">
+                <div class="grid-container-map">
                     <!-- Map Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#map1">
-                            <a href="./airports_map.html" target="_blank"><img class="img-fluid" src="./assets/img/maps/map1.png" alt="..." /></a>
-                        </div>
+                    <div class="grid-item-map">
+                        <iframe src="./airports_map.html" frameborder="0"></iframe>
                     </div>
                     <!-- Map Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-search fa-4x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./../visualizations/graph_img/Precio medio del Boleto por ciudad de destino.png" alt="..." />
-                        </div>
+                    <div class="grid-item-map">
+                        <iframe src="./airports_map.html" frameborder="0"></iframe>
                     </div>
                     <!-- Map Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-search fa-4x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./../visualizations/graph_img/Precio medio del boleto por aerolínea.png" alt="..." />
-                        </div>
+                    <div class="grid-item-map">
+                        <iframe src="./airports_map.html" frameborder="0"></iframe>
                     </div>
         </section>
         <!-- Gráficas Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="graficas-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gráficas</h2>
+                <h2 class="graficas-section-heading text-center text-uppercase text-secondary mb-0">Gráficas</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -208,7 +190,7 @@
                                     <i class="fa fa-search fa-4x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid" src="./../visualizations/graph_img/Distribución de Precios de Boletos por Clase.png" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -530,17 +512,15 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Distribución de Precios de Boletos por Clase</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
                                     <img
                                         class="img-fluid rounded mb-5"
-                                        src="assets/img/portfolio/submarine.png"
+                                        src="./../visualizations/graph_img/Distribución de Precios de Boletos por Clase.png"
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->

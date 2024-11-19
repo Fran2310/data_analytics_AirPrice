@@ -10836,12 +10836,45 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
+  padding-bottom: 3rem;
 }
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
+.proyecto-section {
+  padding: 3rem 0;
+  padding-bottom: 0rem;
+}
+
+.proyecto-section .proyecto-section-heading {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.mapas-section {
+  padding: 3rem 0;
+  padding-bottom: 0rem;
+}
+
+.mapas-section .mapas-section-heading {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.graficas-section {
+  padding: 3rem 0;
+  padding-bottom: 3rem;
+}
+
+.graficas-section .graficas-section-heading {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
@@ -11051,6 +11084,46 @@ html {
 .justificado {
   text-align: justify;
 }
+
+
+.grid-container-map {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item-map {
+  background-color: #ffff;
+  padding: 20px;
+  text-align: center;
+  display: grid; /* Convertimos cada elemento en un contenedor grid */
+  place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
+}
+
+.grid-item-map iframe {
+  width: 200%; /* Ocupa todo el ancho de la celda */
+  height: 500px; /* Ajusta la altura según sea necesario */
+}
+
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0; /* Inicialmente, la altura es 0 */
+  padding-bottom: 56.25%; /* Ajusta este valor según la proporción del video (ejemplo: 16:9) */
+}
+
+.iframe-container iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /*
 hex
