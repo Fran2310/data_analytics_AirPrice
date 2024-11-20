@@ -1,4 +1,8 @@
 import pandas as pd
+<<<<<<< HEAD
+from scripts import Correlation_matriz, Correlation_scatter, Price_comp, price_days_left, trends_from_destination_cities, airline_popularity, avg_price_airline, price_1_vs_2_days_depature, price_class, dist_price_class, booking_classes_airline
+from scripts.maps import airports_map2,airports_india
+=======
 from scripts import Correlation_matriz, Correlation_scatter, price_days_left, trends_from_destination_cities, airline_popularity, avg_price_airline, price_1_vs_2_days_depature, price_class, dist_price_class, booking_classes_airline, stops_duration_price
 from scripts.maps import airports_map,airports_india,airports_popularity_arrives_map, air_routes, airports_popularity_departure_map
 
@@ -17,13 +21,17 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #price_days_left.graph_gen(data, palette_colors, (11,6), True)
 
+<<<<<<< HEAD
+#trends_from_destination_cities.graph_gen(data, palette_colors, (11,6), True)
+=======
 #price_days_left.graph_gen_3line(data, palette_colors, (11,6), True)
 
 #trends_from_destination_cities.graph_gen_economy(data, palette_colors, (11,6), True)
 
 #trends_from_destination_cities.graph_gen_business(data, palette_colors, (11,6), True)
+>>>>>>> 2e73da94ec6a2ba84b7281d3be164a4842fc048b
 
-price_class.graph_gen(data, palette_colors, (8,6), True)
+#price_class.graph_gen(data, palette_colors, (8,6), True)
 
 #dist_price_class.graph_gen(data, palette_colors, (8,6), True)
 
@@ -33,6 +41,9 @@ price_class.graph_gen(data, palette_colors, (8,6), True)
 
 #booking_classes_airline.graph_gen(data, palette_colors, (8, 6), True)
 
+<<<<<<< HEAD
+Price_comp.graph_gen(data,palette_colors, (10,6), True)
+=======
 #stops_duration_price.graph_gen_stops(data, palette_colors, (8, 6), True)
 
 #stops_duration_price.graph_gen_duration(data, palette_colors, (8, 6), True)
