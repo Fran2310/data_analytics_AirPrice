@@ -17,9 +17,13 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #price_days_left.graph_gen(data, palette_colors, (11,6), True)
 
-#trends_from_destination_cities.graph_gen(data, palette_colors, (11,6), True)
+#price_days_left.graph_gen_3line(data, palette_colors, (11,6), True)
 
-#price_class.graph_gen(data, palette_colors, (8,6), True)
+#trends_from_destination_cities.graph_gen_economy(data, palette_colors, (11,6), True)
+
+#trends_from_destination_cities.graph_gen_business(data, palette_colors, (11,6), True)
+
+price_class.graph_gen(data, palette_colors, (8,6), True)
 
 #dist_price_class.graph_gen(data, palette_colors, (8,6), True)
 
