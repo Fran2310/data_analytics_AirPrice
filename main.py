@@ -29,9 +29,9 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #booking_classes_airline.graph_gen(data, palette_colors, (8, 6), True)
 
-#stops_duration_price.graph_gen_stops(data, palette_colors, (6, 4), True)
+#stops_duration_price.graph_gen_stops(data, palette_colors, (8, 6), True)
 
-#stops_duration_price.graph_gen_duration(data, palette_colors, (6, 4), True)
+#stops_duration_price.graph_gen_duration(data, palette_colors, (8, 6), True)
 
 #airports_map2.airport_map(airp) #map html
 
