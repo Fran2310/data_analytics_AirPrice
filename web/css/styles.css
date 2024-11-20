@@ -11017,6 +11017,9 @@ html {
 }
 .masthead .masthead-avatar {
   width: 30rem;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11109,6 +11112,9 @@ html {
 .grid-item-map iframe {
   width: 125%; /* Ocupa todo el ancho de la celda */
   height: 500px; /* Ajusta la altura según sea necesario */
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 
