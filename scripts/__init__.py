@@ -7,4 +7,5 @@ from .price_class import graph_gen
 from .Correlation_scatter import graph_gen
 from .Correlation_matriz import graph_gen
 from .dist_price_class import graph_gen
+from .Price_comp import graph_gen
 from .booking_classes_airline import graph_gen
