@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Análisis de Vuelos</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -24,6 +24,8 @@
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
+                <p></p>
+                <p></p>
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar" src="assets/img/plane.svg" alt="..." />
                 <!-- Masthead Heading-->
@@ -35,15 +37,13 @@
                 <p></p>
                 <p></p>
                 <p></p>
-                <p></p>
-                <p></p>
             </div>
         </header>
         <!-- About Section-->
-        <section class="page-section bg-proyecto text-secondary mb-0" id="about">
+        <section class="proyecto-section bg-proyecto text-secondary mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary">Proyecto</h2>
+                <h2 class="proyecto-section-heading text-center text-uppercase text-secondary">Proyecto</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -66,18 +66,42 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <!-- Mapas Section -->
+        <section class="mapas-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Gráficas</h2>
+                <h2 class="mapas-section-heading text-center text-uppercase text-secondary mb-0">Mapas</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
+                <!-- Maps Grid Items-->
+                <div class="grid-container-map">
+                    <!-- Map Item 1-->
+                    <div class="grid-item-map">
+                        <iframe src="./airports_map.html" frameborder="0"></iframe>
+                    </div>
+                    <!-- Map Item 2-->
+                    <div class="grid-item-map">
+                        <iframe src="./airports_map.html" frameborder="0"></iframe>
+                    </div>
+                    <!-- Map Item 3-->
+                    <div class="grid-item-map">
+                        <iframe src="./airports_map.html" frameborder="0"></iframe>
+                    </div>
+        </section>
+        <!-- Gráficas Section-->
+        <section class="graficas-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Grafica Section Heading-->
+                <h2 class="graficas-section-heading text-center text-uppercase text-secondary mb-0">Gráficas</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Grafica Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
+                    <!-- Grafica Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div
@@ -94,7 +118,7 @@
                             />
                         </div>
                     </div>
-                    <!-- Portfolio Item 2-->
+                    <!-- Grafica Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div
@@ -111,7 +135,7 @@
                             />
                         </div>
                     </div>
-                    <!-- Portfolio Item 3-->
+                    <!-- Grafica Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div
@@ -128,7 +152,7 @@
                             />
                         </div>
                     </div>
-                    <!-- Portfolio Item 4-->
+                    <!-- Grafica Item 4-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div
@@ -145,8 +169,8 @@
                             />
                         </div>
                     </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <!-- Grafica Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
@@ -162,8 +186,8 @@
                             />
                         </div>
                     </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
+                    <!-- Grafica Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
@@ -172,7 +196,85 @@
                                     <i class="fa fa-search fa-4x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid" src="./../visualizations/graph_img/Distribución de Precios de Boletos por Clase.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Grafica Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                            >
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fa fa-search fa-4x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="./../visualizations/graph_img/Correlacion entre cantidad de reservas y el precio .png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Grafica Item 8-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                            >
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fa fa-search fa-4x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="./../visualizations/graph_img/Comparación de Reservas por Clase (Business vs Economy) por Aerolínea.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Grafica Item 9-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                            >
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fa fa-search fa-4x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="./../visualizations/graph_img/Matriz correlacion entre cantidad de reservas y el precio .png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Grafica Item 10-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                            >
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fa fa-search fa-4x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="./../visualizations/graph_img/Distribución de precios y reservas de boletos para las clases.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Grafica Item 11-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                            >
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fa fa-search fa-4x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="./../visualizations/graph_img/Influencia de las Paradas en el Precio del Vuelo por Clase.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Grafica Item 12-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal12">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                            >
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fa fa-search fa-4x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="./../visualizations/graph_img/Influencia de las Paradas en la Duración del Vuelo.png" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -196,7 +298,6 @@
                     <!-- Footer Recursos-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Recursos</h4>
-
                         <a
                             class="btn mx-1"
                             href="https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction?select=Clean_Dataset.csv"
@@ -217,7 +318,7 @@
                         /></a>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                         <img
                             class="img-fluid rounded mb-5"
                             width="175"
@@ -230,8 +331,8 @@
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
+        <!-- Graficas Modals-->
+        <!-- Grafica Modal 1-->
         <div
             class="portfolio-modal modal fade"
             id="portfolioModal1"
@@ -263,15 +364,15 @@
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                        assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                        velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                        Nam.
+                                    <p class="justificado mb-4">
+                                        • <b>Mercado</b>:<br> 
+                                        - Tanto <b>Vistara</b> como <b>Air India</b> se muestran como las opciones mas populares a pesar de presentar los precios mas elevados, consolidándose como actores clave en el mercado.<br><br>
+                                        - Dentro del apartado mas económico, <b>Indigo</b> parece tener una ventaja competitiva teniendo una buena popularidad y una buena opcion en el precio promedio de sus boletos colocandose debajo de <b>SpiceJet</b> y <b>GO FIRST</b>, pero encima de <b>AirAsia</b>.<br>
+                                        
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar Ventana
                                     </button>
                                 </div>
                             </div>
@@ -312,15 +413,14 @@
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                        assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                        velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                        Nam.
+                                    <p class="justificado mb-4">
+                                        • <b>Observacion</b>:<br>
+                                            - La ruta de Chennai a Bangalore es la más costosa<br>
+                                            - La ciudad de Delhi ofrece los precios más bajos<br>
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar Ventana
                                     </button>
                                 </div>
                             </div>
@@ -361,15 +461,21 @@
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                        assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                        velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                        Nam.
+                                    <p class="justificado mb-4">
+                                        • <b>Variaciones de precios</b>:<br>
+                                            - <b>Vistara</b> y <b>Air India</b> tienen los precios promedio de boletos más altos<br>
+                                            - <b>SpiceJet</b>, <b>GO FIRST</b>, <b>Indigo</b>, y <b>AirAsia</b> tienen precios promedio significativamente más bajos<br><br>
+
+                                        • <b>Competencia</b>:<br>
+                                            - Las aerolíneas más económicas, como <b>SpiceJet</b>, <b>GO FIRST</b>, e <b>Indigo</b>, parecen tener precios similares, sugiriendo competencia directa entre ellas<br><br>
+
+                                        • <b>Mercado</b>:<br>
+                                            - <b>Vistara</b> y <b>Air India</b> probablemente ofrecen servicios de mayor calidad o dirigidos a clientes premium, lo que justifica sus precios más elevados.<br>
+                                            - <b>AirAsia</b>, <b>Indigo</b>, <b>SpiceJet</b>, y <b>GO FIRST</b> parecen competir en el segmento de aerolíneas económicas.<br>
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar Ventana
                                     </button>
                                 </div>
                             </div>
@@ -410,15 +516,16 @@
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                        assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                        velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                        Nam.
+                                    <p class="justificado mb-4">
+                                        • <b>Distrubucion:</b><br>
+    - La mayor parte de los boletos, tanto para reservas hechas 1 día antes como 2 días antes de la salida, se concentran en el rango de precios bajos de aproximadamente 10,000 a 20,000 INR. Este rango representa la mayor frecuencia en el histograma<br><br>
+    - A medida que el precio aumenta (más allá de los 30,000 INR), la frecuencia de boletos reservados disminuye significativamente<br><br>
+    - La mayoría de las reservas realizadas 1 o 2 días antes de la salida se encuentran en rangos de precios similares, lo que indica que los boletos no se encarecen significativamente<br><br>
+    - El gran volumen de reservas en el rango de precios bajos sugiere que los clientes que reservan con poca antelación priorizan boletos económicos
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar Ventana
                                     </button>
                                 </div>
                             </div>
@@ -459,15 +566,15 @@
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                        assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                        velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                        Nam.
+                                    <p class="justificado mb-4">
+                                        • <b>Distribucion:</b><br>
+    - La tendencia general es que a mayor antelacion reservan su boleto, pueden encontrar precios mas bajos<br><br>
+    - Cuando quedan menos de 18 dias para la salida del vuelo se observa el principal aumento de precios<br><br>
+    - Cuando reservan a 18 dias o mas para la salida del vuelo el precio no parece aumentar significativamente, pero lo mejor es reversar con la mayor antelacion
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar Ventana
                                     </button>
                                 </div>
                             </div>
@@ -494,17 +601,62 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Distribución de Precios de Boletos por Clase</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
                                     <img
                                         class="img-fluid rounded mb-5"
-                                        src="assets/img/portfolio/submarine.png"
+                                        src="./../visualizations/graph_img/Distribución de Precios de Boletos por Clase.png"
+                                        alt="..."
+                                    />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="justificado mb-4">
+                                        • <b>Distribucion:</b><br>
+            - Clase Business: El precio medio del boleto es de aproximadamente 52.000 INR<br><br>
+            - Clase Economy: El precio medio del boleto es de aproximadamente 6.000 INR<br><br>
+            - Los boletos en clase Business son significativamente más caros de media que los billetes en clase Economy
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div
+            class="portfolio-modal modal fade"
+            id="portfolioModal7"
+            tabindex="-1"
+            aria-labelledby="portfolioModal7"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Correlacion entre cantidad de reservas y el precio</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img
+                                        class="img-fluid rounded mb-5"
+                                        src="./../visualizations/graph_img/Correlacion entre cantidad de reservas y el precio .png"
                                         alt="..."
                                     />
                                     <!-- Portfolio Modal - Text-->
@@ -516,7 +668,235 @@
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div
+            class="portfolio-modal modal fade"
+            id="portfolioModal8"
+            tabindex="-1"
+            aria-labelledby="portfolioModal8"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Comparación de Reservas por Clase (Business vs Economy) por Aerolínea</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img
+                                        class="img-fluid rounded mb-5"
+                                        src="./../visualizations/graph_img/Comparación de Reservas por Clase (Business vs Economy) por Aerolínea.png"
+                                        alt="..."
+                                    />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="justificado mb-4">
+                <b>• Distribucion:</b><br>
+                - <b>Vistara</b> y <b>Air India</b> tienen los precios promedio de boletos más altos y son las únicas aerolíneas con reservas para Business Class<br><br>
+                - <b>SpiceJet</b> tiene la menor cantidad de reservas en general.
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 9-->
+        <div
+            class="portfolio-modal modal fade"
+            id="portfolioModal9"
+            tabindex="-1"
+            aria-labelledby="portfolioModal9"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Matriz correlacion entre cantidad de reservas y el precio </h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img
+                                        class="img-fluid rounded mb-5"
+                                        src="./../visualizations/graph_img/Matriz correlacion entre cantidad de reservas y el precio .png"
+                                        alt="..."
+                                    />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                        assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                        velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                                        Nam.
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 10-->
+        <div
+            class="portfolio-modal modal fade"
+            id="portfolioModal10"
+            tabindex="-1"
+            aria-labelledby="portfolioModal10"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Distribución de precios y reservas de boletos para las clases</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img
+                                        class="img-fluid rounded mb-5"
+                                        src="./../visualizations/graph_img/Distribución de precios y reservas de boletos para las clases.png"
+                                        alt="..."
+                                    />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="justificado mb-4">
+                                        <b>• Distribucion:</b><br>
+                                        - Los billetes de la clase economy se venden en cantidades mucho mayores que los billetes Business                                
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 11-->
+        <div
+            class="portfolio-modal modal fade"
+            id="portfolioModal11"
+            tabindex="-1"
+            aria-labelledby="portfolioModal11"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Influencia de las Paradas en el Precio del Vuelo por Clase</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img
+                                        class="img-fluid rounded mb-5"
+                                        src="./../visualizations/graph_img/Influencia de las Paradas en el Precio del Vuelo por Clase.png"
+                                        alt="..."
+                                    />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="justificado mb-4">
+                                        <b>• Distribucion:</b><br>
+                                        - Los billetes de la clase economy se venden en cantidades mucho mayores que los billetes Business                                
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 12-->
+        <div
+            class="portfolio-modal modal fade"
+            id="portfolioModal12"
+            tabindex="-1"
+            aria-labelledby="portfolioModal12"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Influencia de las Paradas en la Duración del Vuelo</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img
+                                        class="img-fluid rounded mb-5"
+                                        src="./../visualizations/graph_img/Influencia de las Paradas en la Duración del Vuelo.png"
+                                        alt="..."
+                                    />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="justificado mb-4">
+                                        <b>• Distribucion:</b><br>
+                                        - Los billetes de la clase economy se venden en cantidades mucho mayores que los billetes Business                                
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
                                     </button>
                                 </div>
                             </div>

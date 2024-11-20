@@ -12,7 +12,7 @@ import seaborn as sns
 def graph_gen(data, colors, size=(), img=False):
     # Calcular precios medio por clase
     avg_price_class = data.groupby('class')['price'].mean()
-    print("Precio medio del boleto por clase:\n", avg_price_class)
+    #print("Precio medio del boleto por clase:\n", avg_price_class)
 
     info_graph = {
         'title': 'Distribución de Precios de Boletos por Clase',
@@ -29,12 +29,15 @@ def boxplot_graph(data_graph, colors, info_graph, size, img):
         plt.figure(figsize=size)
 
     sns.boxplot(
-        hue=info_graph['x_data'],
+        x=info_graph['x_data'],
         y=info_graph['y_data'],
         data=data_graph,
-        palette=colors[:2], # Usar solo los primeros 2 colores de la paleta
-        legend=False 
+        palette=[colors[0], colors[6]]
     )
+
+    handles = [plt.Line2D([0], [0], color=color, lw=4) for color in [colors[0], colors[6]]]
+    labels = data_graph[info_graph['x_data']].unique()
+    plt.legend(handles, labels, title="Clase", fontsize=10, title_fontsize=10)
 
     plt.title(info_graph['title'], fontsize=12, fontweight='bold', color='#353535')
     plt.xlabel(info_graph['x_name'], fontsize=10, fontweight='bold', color='#353535')
@@ -43,7 +46,6 @@ def boxplot_graph(data_graph, colors, info_graph, size, img):
     plt.yticks(fontsize=10, color='#353535')
     plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
     plt.tight_layout()
-    
     
     if img:
         plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png")
