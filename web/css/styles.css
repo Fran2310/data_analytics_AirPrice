@@ -7668,7 +7668,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 2.5rem !important;
 }
 
 .mb-auto {
@@ -11017,6 +11017,9 @@ html {
 }
 .masthead .masthead-avatar {
   width: 30rem;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11091,6 +11094,11 @@ html {
   margin: 0 auto;
   justify-items: center;
   align-items: center;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .grid-item-map {
@@ -11104,6 +11112,9 @@ html {
 .grid-item-map iframe {
   width: 125%; /* Ocupa todo el ancho de la celda */
   height: 500px; /* Ajusta la altura según sea necesario */
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 
