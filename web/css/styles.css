@@ -11121,6 +11121,20 @@ html {
   }
 }
 
+.grid-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-text-item {
+  padding: 15px;
+  text-align: center;
+  display: grid; /* Convertimos cada elemento en un contenedor grid */
+  place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
+}
 
 .iframe-container {
   position: relative;
