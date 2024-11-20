@@ -1,6 +1,6 @@
 import pandas as pd
-from scripts import Correlation_matriz, Correlation_scatter, price_days_left, trends_from_destination_cities, airline_popularity, avg_price_airline, price_1_vs_2_days_depature, price_class, dist_price_class, Crr_re_pr
-from scripts.maps import airports_map, airports_india
+from scripts import Correlation_matriz, Correlation_scatter, price_days_left, trends_from_destination_cities, airline_popularity, avg_price_airline, price_1_vs_2_days_depature, price_class, dist_price_class, booking_classes_airline
+from scripts.maps import airports_map,airports_india
 
 airp = airports_india.airports
 
@@ -29,7 +29,7 @@ Correlation_scatter.graph_gen(data,palette_colors, (11,6), True)
 
 booking_classes_airline.graph_gen(data, palette_colors, (8, 6), True)
 
-airports_map.airport_map(airp) #map html
+#airports_map2.airport_map(airp) #map html
 
 
 
