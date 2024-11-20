@@ -12,7 +12,7 @@ import seaborn as sns
 def graph_gen(data, colors, size=(), img=False):
     # Calcular precios medio por clase
     avg_price_class = data.groupby('class')['price'].mean()
-    print("Precio medio del boleto por clase:\n", avg_price_class)
+    #print("Precio medio del boleto por clase:\n", avg_price_class)
 
     info_graph = {
         'title': 'Distribución de Precios de Boletos por Clase',
