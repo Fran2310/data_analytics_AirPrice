@@ -2,6 +2,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
+"""
+*Distribucion:
+    - Clase Business: El precio medio del boleto es de aproximadamente 52.000 INR
+    - Clase Economy: El precio medio del boleto es de aproximadamente 6.000 INR
+    - Los boletos en clase Business son significativamente más caros de media que los billetes en clase Economy
+"""
+
 def graph_gen(data, colors, size=(), img=False):
     # Calcular precios medio por clase
     avg_price_class = data.groupby('class')['price'].mean()
