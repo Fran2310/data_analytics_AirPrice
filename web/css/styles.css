@@ -11092,6 +11092,12 @@ html {
   text-align: center;
 }
 
+.grid-grafica{
+  display: grid !important;
+  justify-items: center !important;
+  align-items: center !important;
+}
+
 .grid-container-map {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
