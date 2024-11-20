@@ -30,26 +30,35 @@ def graph_gen(data, colors, size=(), img=False):
         'xticks_step': 2  #mostrar cada 2 etiquetas en el eje X
 
     }
-    gen_line(info_graph, colors, size, img)
+    gen_scatter(info_graph, colors, size, img)
 
-
-def gen_line(info_graph, colors, size, img):
+def gen_scatter(info_graph, colors, size, img):
+    # Si se proporciona un tamaño, ajusta la figura
     if size:
         plt.figure(figsize=size)
-
-    plt.plot(info_graph['x_data'], info_graph['y_data'], marker='o', color=colors[1])
-
-    xticks = range(0, len(info_graph['x_data']), info_graph['xticks_step'])
-    plt.xticks(xticks, info_graph['x_data'][xticks], rotation=90)
+    
+    x_data = info_graph['x_data']
+    y_data = info_graph['y_data']
+    
+    df = pd.DataFrame({
+        info_graph['x_name']: x_data,
+        info_graph['y_name']: y_data
+    })
+    
+    sns.regplot(x=info_graph['x_name'], y=info_graph['y_name'], data=df, 
+                scatter_kws={'color': colors[0], 's': 50}, 
+                line_kws={'color': colors[1], 'linewidth': 2}, 
+                ci=None,  
+                scatter=True)
+    
     plt.title(info_graph['title'])
     plt.xlabel(info_graph['x_name'])
     plt.ylabel(info_graph['y_name'])
-    plt.grid(True, color=colors[7], linestyle='--', linewidth=0.5)
+    
     plt.tight_layout()
     
     if img:
-        plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png")
+        plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png", bbox_inches='tight')
     else:
         plt.show()
-
 
