@@ -2,6 +2,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+"""
+El analinisis da como resultado que:
+-Existe una alta relacion entre el precio del boleto y la popularidad de una aerolinea esto debido al gran volumen de personas que escogen las 
+aerolineas mas popularos haciendo que estas puedan aumentar sus precios para sacar mayor provecho de dicha situacion y asi ofrecer servicios premiuns. 
+
+-las aerolineas menos populares tienden a tener precios mas bajos para atraer clientes a sus servicios y asi tener un mejor puesto en el mercado.
+
+
+"""
 
 def graph_gen(data, colors, size=(), img=False):
 
