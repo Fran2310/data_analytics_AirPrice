@@ -81,7 +81,7 @@ def graph_gen_3line(data, colors, size=(), img=False):
         'business': avg_prices_business,
         'general': avg_prices_general,
         'labels': labels,  # Etiquetas comunes para el eje X
-        'title': 'Precio Medio de Boletos Según Días de Antelación',
+        'title': 'Precio Medio Por Clase de Boletos Según Días de Antelación',
         'x_name': 'Días de Antelación',
         'y_name': 'Precio Medio del Boleto'
     }
@@ -122,7 +122,7 @@ def gen_line_3line(info_graph, colors, size=(), img=False):
 
     # Guardar o mostrar
     if img:
-        plt.savefig("./visualizations/graph_img/Precio_Medio_Segun_Dias_Antelacion.png")
+        plt.savefig(f"./visualizations/graph_img/{info_graph['title']}.png")
     else:
         plt.show()
 
