@@ -11088,6 +11088,10 @@ html {
   text-align: justify;
 }
 
+.centrado {
+  text-align: center;
+}
+
 .grid-container-map {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
