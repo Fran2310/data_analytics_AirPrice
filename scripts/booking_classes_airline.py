@@ -1,6 +1,10 @@
 from .bar_graph_3C import gen_bar_3C
 
-
+"""
+*Distribucion:
+    - Vistara y Air India tienen los precios promedio de boletos más altos y son las únicas aerolíneas con reservas para Business Class
+    - SpiceJet tiene la menor cantidad de reservas en general.
+"""
 def graph_gen(data, colors, size=(), img=False):
     
     #Genera un gráfico de barras agrupadas para comparar el número de reservas 
