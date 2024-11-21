@@ -7,6 +7,14 @@ import seaborn as sns
 
 
 """
+Influencia de las paradas en los precios del boleto por clase
+
+-Se nota un aumento significativo en el precio del boleto cuando los vuelos se lleva a cabo 1 o mas paradas, esto debido a los gastos operativos que conlleva como tarifas aeroportuarias, 
+comida y suministros para los pasajeros, checkeos que aumenten el tiempo de espera y otras cosas haciendo que el precio aumente para suplir estas perdidas.
+
+"""
+
+"""
 DEPRECATED: EL VALOR DEL PRECIO ESTABA SESGADO POR LA DIFERENCIA DE PRECIOS DE CLASE
 def graph_gen_stops(data, colors, size=(), img=False):
     

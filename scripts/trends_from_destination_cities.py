@@ -3,8 +3,24 @@ from .bar_graph_3C import gen_bar_3C
 
 """
 *Observacion:
-    - La ruta de Chennai a Bangalore es la más costosa
-    - La ciudad de Delhi ofrece los precios más bajos
+    - La ruta de Chennai a Bangalore es la más costosaS
+
+Precio medio del boleto por ciudad de destino (Business)
+
+    -Hyderabad en la mayoría de los casos muestra un mínimo menor costo del boleto hacia las principales ciudades de destino con respecto a las demás
+
+    -Delhi es la segunda ciudad con los boletos mas baratos con respecto a los destinos 
+
+    -Kolkata es la ciudad con los boletos mas caros con respecto a los destinos
+
+Precio medio del boleto por ciudad de destino (Economy)
+
+    -Hyderabad en la mayoría de los casos muestra un mínimo menor costo del boleto hacia las principales ciudades de destino con respecto a las demás
+
+    -Delhi es la segunda ciudad con los boletos mas baratos 
+
+    -Kolkata es la ciudad con los boletos mas caros de todas las ciudades
+
 """
 """
 
