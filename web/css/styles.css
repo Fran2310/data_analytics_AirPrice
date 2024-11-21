@@ -11113,7 +11113,7 @@ html {
 
 .grid-item-map {
   background-color: #ffff;
-  padding: 20px;
+  margin: 50px;
   text-align: center;
   display: grid; /* Convertimos cada elemento en un contenedor grid */
   place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
@@ -11137,7 +11137,6 @@ html {
 
 .grid-text-item {
   padding: 15px;
-  text-align: center;
   display: grid; /* Convertimos cada elemento en un contenedor grid */
   place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
 }
