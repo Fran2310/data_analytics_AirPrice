@@ -11078,6 +11078,9 @@ html {
   padding-bottom: 5rem;
   background-color: #1e5b80;
   color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .copyright {
@@ -11090,6 +11093,12 @@ html {
 
 .centrado {
   text-align: center;
+}
+
+.centrado-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-grafica{
