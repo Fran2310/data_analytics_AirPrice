@@ -11150,6 +11150,26 @@ html {
   place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
 }
 
+.grid-container-logo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) !important;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item-logo {
+  display: grid; /* Convertimos cada elemento en un contenedor grid */
+  flex-shrink: 1; /* La imagen crecerá para ocupar todo el espacio disponible */
+  place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
+  object-fit: contain; /* Hace que la imagen llene todo el contenedor, recortando si es necesario */
+  @media (max-width: 768px) {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+
 .iframe-container {
   position: relative;
   width: 100%;
