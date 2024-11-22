@@ -11145,7 +11145,6 @@ html {
 }
 
 .grid-text-item {
-  padding: 15px;
   display: grid; /* Convertimos cada elemento en un contenedor grid */
   place-items: center; /* Centra los elementos tanto horizontal como verticalmente */
 }
@@ -11182,6 +11181,34 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+.slider {
+  background: #ffffff;
+  height: 100px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider .move {
+  display: flex;
+  width: calc(250px * 14);
+  animation: animacion 50s linear infinite;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider .box {
+  height: 100px;
+  width: 250px;
 }
 
 
