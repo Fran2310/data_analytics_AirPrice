@@ -11185,9 +11185,9 @@ html {
 
 
 .slider {
-  background: #ffffff;
+  background: #f8f9fa;
   height: 100px;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
