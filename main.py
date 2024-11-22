@@ -5,7 +5,7 @@ from scripts.maps import airports_map,airports_india,airports_popularity_arrives
 
 airp = airports_india.airports
 
-data = pd.read_csv('./data/Clean_Dataset.csv')
+data = pd.read_csv('./data/Clean_Dataset_config.csv')
 
 palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e59', '#63529b', '#352c53']
 
@@ -30,7 +30,7 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #booking_classes_airline.graph_gen(data, palette_colors, (8, 6), True)
 
-Price_comp.graph_gen(data,palette_colors, (10,6), True)
+#Price_comp.graph_gen(data,palette_colors, (10,6), True)
 
 #stops_duration_price.graph_gen_stops(data, palette_colors, (8, 6), True)
 
