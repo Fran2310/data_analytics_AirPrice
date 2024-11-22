@@ -1,22 +1,55 @@
 import folium
+import numpy as np
+import pandas as pd
+import json
+from airports_india import airports
 
-def airports_popularity_arrives_map(airports):
-    # Crear un mapa centrado en la India
-    m = folium.Map(location=[20.5937, 78.9629], zoom_start=5)
-    
-    #factor de escala de los circulos
-    scale = 1000
-    
-    # Iterar sobre el diccionario de diccionarios y agregar los circulos al mapa
-    for key, value in airports.items():
-        folium.CircleMarker(
+with open('./scripts/maps/India_States_2020_compressed_topo.json') as f:
+  states_topo = json.load(f)
+  
+#buscando la información en nuestro clear
+data_main = pd.read_csv('./data/Clean_Dataset.csv', encoding='utf-8')
+data_arrives = data_main['destination_city'].value_counts()
+
+#convirtiendo en data frame
+data_arrives_df = data_arrives.reset_index()
+data_arrives_df.columns = ['Province', 'Count']
+
+#creamos un diccionario para poder cambiar los nombres de las ciudades 
+#de nuestro df y que coincidan con el nombre de los estados del json
+nuevos_valores = {
+    'Mumbai': 'MAHARASHTRA',
+    'Delhi':'DELHI',
+    'Bangalore':'KARNATAKA',
+    'Kolkata' :'WEST BENGAL',
+    'Hyderabad' : 'TELANGANA',
+    'Chennai':'TAMIL NADU'
+}
+
+#Remplazando valores
+data_arrives_df['Province'] = data_arrives_df['Province'].replace(nuevos_valores)
+
+#creamos el mapa
+folium_map = folium.Map(location=[19, 80],
+                        zoom_start=4,
+                        tiles="OpenStreetMap")
+folium.Choropleth(geo_data=states_topo,
+             topojson='objects.India_States_2020_compressed',
+             key_on='feature.properties.state_name',
+             data=data_arrives_df, 
+             columns=['Province','Count'], 
+             fill_color='OrRd', 
+             fill_opacity=0.7, 
+             line_opacity=0.5).add_to(folium_map)
+
+
+for key, value in airports.items():
+        folium.Marker(
             location=value['location'],
-            radius=max(float(value['arrives'])/scale, 5),
-            popup=f"A {value['name']} han llegado {value['arrives']} vuelos",
-            tooltip= value['city'],
-            color = 'red',
-            fill_color = 'red'
-        ).add_to(m)
+            popup=f"<h1>{value['city']}, {value['name']}</h1><img src='{value['img']}' width=300px><p>A este aereopuerton han llegado {value['arrives']} personas.</p>",
+            tooltip=value['name'],
+            icon=folium.Icon(icon='plane', prefix='fa', icon_color='white', color = 'red')
+        ).add_to(folium_map)
 
-    # Guardar el mapa
-    m.save('./web/airports_popularity_arrives_map.html')
+# Guardar el mapa en un archivo HTML
+folium_map.save('./web/airports_popularity_arrives_map.html')
