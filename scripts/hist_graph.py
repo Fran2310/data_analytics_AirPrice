@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
 def gen_hist(data, colors, info_graph, size, img):
+
     if size:
         plt.figure(figsize=size)
 

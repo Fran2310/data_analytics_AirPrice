@@ -4,7 +4,7 @@ from .bar_graph import gen_bar
 """
 *Mercado: 
     - Tanto Vistara como Air India se muestran como las opciones mas populares a pesar de presentar los precios mas elevados, consolidándose como actores clave en el mercado.
-    - Dentro del apartado mas económico, Indigo parece tener una ventaja competitiva teniendo una buena popularidad y una buena opcion en el precio promedio de sus boletos colocandose debajo de SpiceJet GO FIRST, pero encima de AirAsia.
+    - Dentro del apartado mas economico, indigo parece tener una ventaja competitiva teniendo una buena popularidad y es una buena opcion dentro del rango de tarifas que maneja en sus boletos, colocandose debajo de SpaceJet y Go First pero encima de AirAsia
     
 *Relacion:
     -Posible relacion inversa entre el numero de reservas y el precio (Grafica a desarrollar)

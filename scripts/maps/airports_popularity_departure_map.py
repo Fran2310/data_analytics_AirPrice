@@ -44,14 +44,16 @@ folium.Choropleth(geo_data=states_topo,
              fill_opacity=0.7, 
              line_opacity=0.5).add_to(folium_map)
 
+# Añadir popups
 for key, value in airports.items():
-        folium.Marker(
-            location=value['location'],
-            popup=f"<h1>{value['city']}, {value['name']}</h1><img src='{value['img']}' width=300px><p>Desde este aereopuerto han salido {value['departures']} personas.</p>",
-            tooltip=value['name'],
-            icon=folium.Icon(icon='plane', prefix='fa', icon_color='white', color = 'green')
-        ).add_to(folium_map)
-
+    popup_content = f"<h2>{value['city']}, {value['name']}</h2><h5>Desde este aeropuerto en {value['city']} han salido {value['departures']} personas.</h5>"
+    popup = folium.Popup(popup_content, max_width=200) 
+    folium.Marker(
+        location=value['location'],
+        popup=popup,
+        tooltip=value['name'],
+        icon=folium.Icon(icon='plane', prefix='fa', icon_color='white', color='green')
+    ).add_to(folium_map)
 
 # Guardar el mapa en un archivo HTML
 folium_map.save('./web/airports_popularity_departure_map.html')
