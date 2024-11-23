@@ -1,4 +1,4 @@
-from .bar_graph_3C import gen_bar_3C
+from .bar_graph_destinations import gen_bar_destinations
 
 
 """
@@ -56,7 +56,7 @@ def graph_gen_economy(data, colors, size=(), img=False):
     data_graph_economy = data_economy.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
     
     info_graph_economy = {
-        'title': 'Precio Medio del Boleto por Ciudad de Destino (Economy)',
+        'title': 'Costo Promedio del Boleto por Ciudad de Destino (Economy)',
         'x_name': 'Ciudad de Destino',
         'y_name': 'Precio Promedio (INR)',
         'legend': 'Ciudad de Origen',
@@ -65,7 +65,7 @@ def graph_gen_economy(data, colors, size=(), img=False):
         'hue_col': 'source_city'
     }
 
-    gen_bar_3C(data_graph_economy, colors, info_graph_economy, size, img)
+    gen_bar_destinations(data_graph_economy, colors, info_graph_economy, size, img)
 
 def graph_gen_business(data, colors, size=(), img=False): 
     
@@ -74,7 +74,7 @@ def graph_gen_business(data, colors, size=(), img=False):
     data_graph_business = data_business.groupby(['destination_city', 'source_city'])['price'].mean().reset_index()
     
     info_graph_business = {
-        'title': 'Precio Medio del Boleto por Ciudad de Destino (Business)',
+        'title': 'Costo Promedio del Boleto por Ciudad de Destino (Business)',
         'x_name': 'Ciudad de Destino',
         'y_name': 'Precio Promedio (INR)',
         'legend': 'Ciudad de Origen',
@@ -83,4 +83,4 @@ def graph_gen_business(data, colors, size=(), img=False):
         'hue_col': 'source_city'
     }
 
-    gen_bar_3C(data_graph_business, colors, info_graph_business, size, img)
+    gen_bar_destinations(data_graph_business, colors, info_graph_business, size, img)
