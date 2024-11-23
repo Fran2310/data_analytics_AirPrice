@@ -14,11 +14,11 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #booking_classes_airline.graph_gen(data, [palette_colors[1], palette_colors[0]], (8, 6), True)
 
-avg_price_airline.graph_gen(data, palette_colors[:2], (8,6), True)
-
-
+#avg_price_airline.graph_gen(data, palette_colors[:2], (8,6), True)
 
 #price_1_vs_2_days_depature.graph_gen(data, palette_colors, (8,6), True)
+
+
 
 #price_days_left.graph_gen(data, palette_colors, (11,6), True)
 
