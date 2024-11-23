@@ -35,7 +35,7 @@ Puede ver todas las gráficas fácilmente desde la [web del proyecto](https://fr
 4. Ahora puedes ejecutar las gráficas desde el VS Code o desde la terminal con `python main.py`
 5. Puede ver las gráficas resultado de la ejecución en `./visualizations/graph_img/`
 
-# Integrantes del proyeto
+# Integrantes del proyecto
 - Francisco Ramos
 - Joshua Carrera
 - Joel Escobar
