@@ -24,13 +24,7 @@ palette_colors = ['#00a5c4', '#00596a', '#d5f4f4', '#738484', '#a172a5', '#573e5
 
 #dist_price_class.graph_gen(data, palette_colors, (8,6), True)
 
-#Correlation_matriz.graph_gen(data,palette_colors, (11,6), True)
-
-#Correlation_scatter.graph_gen(data,palette_colors, (11,6), True)
-
 #booking_classes_airline.graph_gen(data, palette_colors, (8, 6), True)
-
-#Price_comp.graph_gen(data,palette_colors, (10,6), True)
 
 #stops_duration_price.graph_gen_stops(data, palette_colors, (8, 6), True)
 
