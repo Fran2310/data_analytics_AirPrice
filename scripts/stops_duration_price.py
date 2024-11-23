@@ -1,9 +1,6 @@
 import pandas as pd
 from .bar_graph import gen_bar
 from .bar_graph_3C import gen_bar_3C
-from .hist_graph import gen_hist
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 
 """
@@ -47,7 +44,7 @@ def graph_gen_stops(data, colors, size=(), img=False):
     data_graph = data.groupby(['stops', 'class'])['price'].mean().reset_index()
 
     # Ajustar el orden lógico de las categorías
-    stop_order = ['zero', 'one', 'two_or_more']
+    stop_order = ['cero', 'uno', 'dos o más']
     data_graph['stops'] = pd.Categorical(data_graph['stops'], categories=stop_order, ordered=True)
     data_graph = data_graph.sort_values(by='stops')
 
@@ -71,7 +68,7 @@ def graph_gen_duration(data, colors, size=(), img=False):
     data_graph = data.groupby('stops')['duration'].mean()
 
     # Ajustar el orden lógico de las categorías
-    stop_order = ['zero', 'one', 'two_or_more']
+    stop_order = ['cero', 'uno', 'dos o más']
     data_graph = data_graph.reindex(stop_order)
 
     info_graph = {
