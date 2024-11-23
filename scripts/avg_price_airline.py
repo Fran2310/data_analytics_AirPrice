@@ -1,5 +1,4 @@
 import pandas as pd
-from .bar_graph import gen_bar
 from .bar_graph_3C import gen_bar_3C
 
 """
