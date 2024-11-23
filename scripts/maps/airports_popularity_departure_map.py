@@ -47,7 +47,7 @@ folium.Choropleth(geo_data=states_topo,
 for key, value in airports.items():
         folium.Marker(
             location=value['location'],
-            popup=f"<h1>{value['city']}, {value['name']}</h1><img src='{value['img']}' width=300px><p>Desde este aereopuerto han salido {value['departures']} personas.</p>",
+            popup=f"<h2>{value['city']}, {value['name']}</h2><h5>Desde este aeropuerto en {value['city']} han salido {value['departures']} personas.<h5>",
             tooltip=value['name'],
             icon=folium.Icon(icon='plane', prefix='fa', icon_color='white', color = 'green')
         ).add_to(folium_map)
