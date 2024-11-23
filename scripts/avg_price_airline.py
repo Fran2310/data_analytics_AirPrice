@@ -49,7 +49,7 @@ def graph_gen(data, colors, size=(), img=False):
     data_graph = data_graph.sort_values(by='airline')
     
     info_graph = {
-        'title': 'Precio Medio del Boleto por Aerolínea y Clase',
+        'title': 'Costo Promedio del Boleto por Clase y Aerolínea',
         'x_name': 'Aerolínea',
         'y_name': 'Precio Promedio (INR)',
         'x_col': 'airline',
