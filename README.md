@@ -32,7 +32,8 @@ Puede ver todas las gráficas fácilmente desde la [web del proyecto](https://fr
 1. Dentro de la carpeta del proyecto genere un entorno virtual con `python -m venv venv`
 2. Luego debe activar el venv como entorno ya sea desde VS Code o desde terminal con `source ./venv/bin/activate` (Ejemplo en Linux)
 3. Necesita instalar las bibliotecas con `pip install -r ./environment/requirements.txt`
-4. Ahora puede ejecutar las gráficas desde el VS Code o desde la terminal con `python main.py`
+4. Ahora puedes ejecutar las gráficas desde el VS Code o desde la terminal con `python main.py`
+5. Puede ver las gráficas resultado de la ejecución en `./visualizations/graph_img/`
 
 # Integrantes del proyeto
 - Francisco Ramos
