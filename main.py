@@ -1,9 +1,6 @@
 import pandas as pd
 
 from scripts import Correlation_matriz, Correlation_scatter, price_days_left, trends_from_destination_cities, airline_popularity, avg_price_airline, price_1_vs_2_days_depature, price_class, dist_price_class, booking_classes_airline, stops_duration_price, Price_comp
-#from scripts.maps import airports_map,airports_india,airports_popularity_arrives_map, air_routes, airports_popularity_departure_map
-
-#airp = airports_india.airports
 
 data = pd.read_csv('./data/Clean_Dataset_config.csv')
 
@@ -34,18 +31,12 @@ price_class.graph_gen(data, palette_colors, (8,6), True)
 
 dist_price_class.graph_gen(data, palette_colors, (8,6), True)
 
-
-
 #Correlation_matriz.graph_gen(data,palette_colors, (11,6), True)
 
 #Correlation_scatter.graph_gen(data,palette_colors, (11,6), True)
 
 #Price_comp.graph_gen(data,palette_colors, (10,6), True)
 
-
-
-#airports_popularity_arrives_map.airports_popularity_arrives_map(airp) #map airports popularity arrives html
-#airports_popularity_departure_map.airports__popularity_departure_map(airp) #map airports popularity departure html
 
 
 
